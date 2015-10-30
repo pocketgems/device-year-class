@@ -160,7 +160,7 @@ public class YearClass {
     if (clockSpeedKHz <= 620 * MHZ_IN_KHZ) return CLASS_2009;
     if (clockSpeedKHz <= 1020 * MHZ_IN_KHZ) return CLASS_2010;
     if (clockSpeedKHz <= 1220 * MHZ_IN_KHZ) return CLASS_2011;
-    if (clockSpeedKHz <= 1520 * MHZ_IN_KHZ) return CLASS_2012;
+    if (clockSpeedKHz <= 1620 * MHZ_IN_KHZ) return CLASS_2012;
     if (clockSpeedKHz <= 2020 * MHZ_IN_KHZ) return CLASS_2013;
     return CLASS_2014;
   }
