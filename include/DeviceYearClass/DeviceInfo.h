@@ -10,9 +10,9 @@
 
 #define DEVICEINFO_UNKNOWN (-1)
 
-#import <BridgeKit/JavaObject.h>
+#import <BridgeKit/BK2JavaObject.h>
 
-@interface FBDeviceInfo : JavaObject
+@interface FBDeviceInfo : BK2JavaObject
 
 /**
  * Returns number of cores or DEVICEINFO_UNKNOWN

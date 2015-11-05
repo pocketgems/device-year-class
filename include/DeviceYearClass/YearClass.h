@@ -8,8 +8,8 @@
 #error Android only
 #endif
 
-#import <BridgeKit/JavaObject.h>
-#import <BridgeKit/AndroidContext.h>
+#import <BridgeKit/BK2JavaObject.h>
+#import <BridgeKit/BK2AndroidContext.h>
 
 typedef NS_ENUM(NSInteger, FBYearClassValue)
 {
@@ -23,7 +23,7 @@ typedef NS_ENUM(NSInteger, FBYearClassValue)
     FBYC_CLASS_2014,
 };
 
-@interface FBYearClass : JavaObject
+@interface FBYearClass : BK2JavaObject
 
 /**
  * Returns Year/Class of device.

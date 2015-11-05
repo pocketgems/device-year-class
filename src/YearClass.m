@@ -6,10 +6,10 @@
 
 #import "YearClass.h"
 
-#import <BridgeKit/AndroidActivity.h>
+#import <BridgeKit/BK2AndroidActivity.h>
 
 @interface FBYearClass()
-+ (NSInteger)yearClassOfAppContext:(AndroidContext *)ctx;
++ (NSInteger)yearClassOfAppContext:(BK2AndroidContext *)ctx;
 @end
 
 @implementation FBYearClass
@@ -17,7 +17,7 @@
 + (void)initializeJava
 {
     [super initializeJava];
-    [FBYearClass registerStaticMethod:@"get" selector:@selector(yearClassOfAppContext:) returnValue:[JavaClass intPrimitive] arguments:[AndroidContext className], nil];
+    [FBYearClass registerStaticMethod:@"get" selector:@selector(yearClassOfAppContext:) returnValue:[BK2JavaClass intPrimitive] arguments:[BK2AndroidContext className], nil];
 }
 
 + (NSString *)className
@@ -27,7 +27,7 @@
 
 + (FBYearClassValue)yearClass
 {
-    return (FBYearClassValue)[self yearClassOfAppContext:[AndroidActivity currentActivity]];
+    return (FBYearClassValue)[self yearClassOfAppContext:[BK2AndroidActivity currentActivity]];
 }
 
 @end
