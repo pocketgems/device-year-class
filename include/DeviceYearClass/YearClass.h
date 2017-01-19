@@ -21,7 +21,6 @@ typedef NS_ENUM(NSInteger, FBYearClassValue)
     FBYC_CLASS_2012,
     FBYC_CLASS_2013,
     FBYC_CLASS_2014,
-    FBYC_CLASS_2015,
 };
 
 @interface FBYearClass : JavaObject
